@@ -29,3 +29,12 @@ USE Root;
     VALUES(393, 234, 2019-8-3, 34);
     insert into Order_Items
     VALUES(393, 12, 1);
+
+// "To find number of orders done by a specific customer"
+ SELECT count(name) from Customers1
+  where name = "xave";
+// "Retrieve list of items in a specific order"
+SELECT count(order_id) from Order_Items;
+
+SELECT * from Order_Items
+ORDER BY quantity;
